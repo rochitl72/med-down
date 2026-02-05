@@ -1,0 +1,33 @@
+[
+  {
+    "type": "drug_interaction",
+    "drug_name": "Timolol",
+    "contraindication": "Asthma",
+    "mechanism": "Non-selective beta-blockade causing bronchoconstriction.",
+    "severity": "CRITICAL",
+    "recommendation": "Switch to Betaxolol (Selectivity: Beta-1) or Brimonidine."
+  },
+  {
+    "type": "drug_interaction",
+    "drug_name": "Ciprofloxacin",
+    "contraindication": "Sulfa Allergy",
+    "mechanism": "While chemically distinct, cross-sensitivity is rare but caution is advised in severe cases.",
+    "severity": "WARNING",
+    "recommendation": "Monitor closely or switch to Moxifloxacin if history is severe."
+  },
+  {
+    "type": "protocol_gap",
+    "condition": "Suspected Glaucoma",
+    "required_tests": ["Intraocular Pressure (IOP)", "Gonioscopy", "OCT - RNFL", "Perimetry (Visual Field)"],
+    "missing_trigger": "If patient has 'Halos' and 'High IOP' but no 'OCT' ordered.",
+    "alert_message": "Standard of Care Gap: Glaucoma workup requires OCT and Perimetry."
+  },
+  {
+    "type": "progress_insight",
+    "condition": "Diabetic Retinopathy",
+    "metric": "Visual Acuity",
+    "logic": "Compare current VA vs previous VA.",
+    "positive_message": "Vision improved. Treatment effective.",
+    "negative_message": "Vision declined. Consider retinal imaging."
+  }
+]
